@@ -1,6 +1,6 @@
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   color: #001f3f;
   background-color: #caebf2;
 }
@@ -16,12 +16,37 @@ hr {
     rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
+.header-grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 50px;
+  background-color: #FFFFFF;
+}
+
+.header-links-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.socials-links-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
 .quote {
   font-style: italic;
 }
 
 
 .container {
+  margin: 0px auto;
+
+}
+
+.inner-container {
   max-width: 840px;
   margin: 0 auto;
 }
@@ -30,7 +55,7 @@ hr {
   margin: 20px auto;
 }
 
-.header {
+.headshot-and-quote {
   text-align: center
 }
 
@@ -95,6 +120,7 @@ hr {
 .links-and-contact-grid {
   display: grid;
   grid-template-columns: 30% 70%;
+  background-color: #FFFFFF;
 }
 
 .links {
