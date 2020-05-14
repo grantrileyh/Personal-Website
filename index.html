@@ -1,9 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html
+
 <head>
   <title>Riley Grant</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?
+    family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <h1>Hello World, check out my shitty website!</h1>
+
+<div class="container">
+
+  <! Header Div >
+  <div class="header">
+    <img class="headshot" src="images/headshot.jpg"
+      alt="Headshot" style="width:200px;height:200px;"/>
+    <h1> Riley Grant </h1>
+    <h3> BS in Civil Engineering </h3>
+    <p class="quote" >
+      {{ Stay golden, ponyboy }}
+    </p>
+  </div>
+
+  <hr/>
+
+  <! About Me Div >
+  <div class="about-grid">
+
+    <! I am stuff >
+    <div class="i-am">
+      <h3> I am: </h3>
+      <ul class="about-list">
+        <li> An engineer </li>
+        <li> A musician </li>
+        <li> A lover of the outdoors </li>
+      </ul>
+    </div>
+
+    <! I like to stuff >
+    <div class="i-like">
+      <h3> I like to: </h3>
+      <ul class="about-list">
+        <li> Backpack, Climb and Bike</li>
+        <li> Play Piano and Trumpet</li>
+        <li> Bake, Cook and Read</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr/>
+
+
+  <! Portfolio Div >
+  <div class="projects-header" >
+    <h3> My Projects: </h3>
+
+    <div class=projects-grid >
+
+      <div class="project-image-wrapper" >
+        <h4> Project 1 </h4>
+        <img class="project-image" src="images/project-1.jpg"/>
+      </div>
+
+      <div class="project-image-wrapper" >
+        <h4> Project 2 </h4>
+        <img class="project-image" src="images/project-2.jpg"/>
+      </div>
+
+      <div class="project-image-wrapper" >
+        <h4> Project 3 </h4>
+        <img class="project-image" src="images/project-3.jpg"/>
+      </div>
+
+      <div class="project-image-wrapper" >
+        <h4> Project 4 </h4>
+        <img class="project-image" src="images/project-4.jpg"/>
+      </div>
+
+    </div>
+
+  </div>
+
+  <hr/>
+
+
+  <! Footer Div >
+  <div class="links-and-contact-grid">
+
+    <! Links >
+    <div class="links">
+      <h3> Links </h3>
+      <ul class="links-list">
+        <li>
+          <a href="https://github.com/grantrileyh/"> Github </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/rileyhgrant/"> Twitter </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/rileyhgrant/"> LinkedIn </a>
+        </li>
+    </div>
+
+    <! Contact Me >
+    <div class="contacts">
+	     <form action="#">
+	        <label for="email">
+                 <h4> Email </h4>
+                 <input type="email" id="email" placeholder="Enter your email" />
+		      </label>
+				  <label for="message">
+                  <h4> Message </h4>
+                  <textarea id="message"> Your Message </textarea>
+				  </label>
+          <div class="submit-button-wrapper">
+            <input type="submit" valid="Send Message" id="submit-button"/>
+          </div>
+			</form>
+		</div>
+
+  </div>
+
+</div>
+<script src="script.js"></script>
 </body>
+
 </html>

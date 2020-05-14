@@ -1,0 +1,158 @@
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: #001f3f;
+  background-color: #caebf2;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.quote {
+  font-style: italic;
+}
+
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.container > div {
+  margin: 20px auto;
+}
+
+.header {
+  text-align: center
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+
+.i-am, .i-like {
+  text-align: center;
+  text-decoration: none;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.projects-header {
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.project-image {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+  transition: all ease-in-out 0.2s;
+}
+
+.project-image:hover {
+  filter: brightness(0.75);
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+
+
+.project-image-wrapper {
+  justify-self: center;
+  padding: 4%;
+  position: relative;
+}
+
+.project-image-wrapper:hover > h4 {
+  visibility: visible;
+}
+
+.project-image-wrapper > h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  visibility: hidden;
+  z-index: 2;
+  transition: all ease-in-out 0.2s;
+}
+
+.links-and-contact-grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.links {
+  justify-self: center;
+}
+
+.links-list{
+  list-style: none
+  padding: 0;
+}
+
+.headshot {
+  border-radius: 50%;
+  width: 150px;
+  height 150px;
+  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+  transition: all ease-in-out 0.2s;
+}
+
+.headshot:hover {
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+}
+
+
+form input, textarea {
+  padding: 5px;
+  border-radius; 5px;
+  width: 240px;
+}
+
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+
+form input[type="submit"] {
+  width: 250px;
+}
+
+.submit-button-wrapper {
+  background-color: #caebf2;
+  margin: 20px 0;
+}
+
+/* break point for 480px */
+@media (max-width: 480px) {
+  .about-grid {
+    grid-template-columns: 100%
+  }
+}
+
+/* break point for 640px */
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 100%
+  }
+
+  .links-and-contact-grid {
+    grid-template-columns: 100%
+  }
+}
