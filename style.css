@@ -1,5 +1,12 @@
 
+
+
 /* GLOBALS */
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
 
 /* header fonts */
 h1, h2, h3, h4 {
@@ -8,16 +15,20 @@ h1, h2, h3, h4 {
 
 /* paragraph fonts */
 body {
-  font-family: 'Noto Sans', monospace;
-  color: #001f3f;
-  margin: 0;
+  font-family: 'Raleway', monospace;
+  color: #581C0C;
+  /*color: #001f3f; */
+  margin: 0px;
+  margin-bottom: 0px;
+  height: 100%;
+  overflow: auto;
 }
 
 hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  border: 0px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(88, 28, 12, 0),
+    rgba(88, 28, 12, 0.75), rgba(88, 28, 12, 0));
 }
 
 
@@ -25,11 +36,12 @@ hr {
 
 .container {
   margin: 0px auto;
-  background-color: rgb(245, 245, 245);
+  margin-bottom: 0px;
+  background-color: #f1e3cb;
 }
 
 .container > div {
-  margin: 20px auto;
+  margin: 0px auto;
 }
 
 .inner-container {
@@ -40,33 +52,38 @@ hr {
 /* MASTHEAD */
 
 #masthead {
-  background: rgb(220, 220, 220);
+  background: #f2782c; /* #CA5116;rgb(220, 220, 220);*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   flex: 0 1 30%;
   padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #masthead h1 {
+    /*font-size: 28px;*/
     margin: 0;
 }
 
 #masthead a{
   text-decoration: none;
-  color: rgb(00, 00, 255);
+  color: #581C0C;
+  font-weight: bold;
 }
 
 #masthead a:hover{
-  color: rgba(00, 00, 255, 0.5);
+  color: #F9B384;
 }
 
 .header-links-grid {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  flex: 0 1 55%;
+  flex: 0 1 50%;
 }
 
 .socials-links-grid {
@@ -74,13 +91,14 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex: 0 1 15%;
+  flex: 0 1 20%;
 }
 
 
 /* HEADSHOT */
 
 .headshot-and-quote {
+  margin-top: 100px;
   text-align: center
 }
 
@@ -169,20 +187,18 @@ hr {
 
 /* FOOTER */
 
-.links-and-contact-grid {
-  display: grid;
-  grid-template-columns: 30% 70%;
-  background-color: rgb(220, 220, 220);
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f2782c; /* #CA5116; /* rgb(220, 220, 220) */
+  margin-bottom: 0px;
 }
 
-.links {
+.footer-text {
   justify-self: center;
 }
 
-.links-list{
-  list-style: none
-  padding: 0;
-}
+
 
 form input, textarea {
   padding: 5px;
@@ -225,3 +241,15 @@ form input[type="submit"] {
     grid-template-columns: 100%
   }
 }
+
+
+/*
+   COLOR SCHEME FOR SAFEKEEPING
+   ======================================
+   LIGHTEST;  light pinkish   :   #f1e3cb
+   MID-LIGHT; sandy pinkish   :   #f9b384
+   MID-DARK;  orange-ey       :   #f2782c
+   DARK;      rust-ey         :   #581c0c
+   =====
+   UNUSED mid-dark            :   #ca5116
+*/
