@@ -192,20 +192,7 @@ a:hover{
 }
 
 
-.project-image {
-  border-radius: 10px;
-  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
-  transition: all ease-in-out 0.2s;
-}
-
-
-.project-image:hover {
-  filter: brightness(0.55);
-  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
-}
-
 .project-image-wrapper {
-  justify-self: center;
   padding: 0%;
   position: relative;
   flex: 0 1 40%;
@@ -226,25 +213,41 @@ a:hover{
   visibility: visible;
 }
 
+.project-image {
+  border-radius: 10px;
+  margin-right: 0px;
+  box-shadow: 0 4px 6px 0 rgba(34, 60, 80, 0.16);
+  transition: all ease-in-out 0.2s;
+}
 
-
-.project-text {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 50px;
-  flex: 0 1 60%;
+.project-image:hover {
+  filter: brightness(0.55);
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
 }
 
 .project-links {
   list-style: none;
   display: flex;
+  text-align: left;
   flex-direction: column;
   justify-content: space-around;
+  flex: 0 1 10%;
 }
 
-.project-bullet-points {
+.project-skills-text {
+  list-style: none;
   text-align: left;
+  flex: 0 1 35%;
 }
+
+.project-features-text {
+  list-style: none;
+  text-align: left;
+  flex: 0 1 35%;
+  margin-right: 50px;
+}
+
+
 
 
 
@@ -259,11 +262,19 @@ a:hover{
 
 
 
+.links-and-contact-grid {
+  justify-content: center;
+  background-color: white;
+}
+
+.contacts {
+  background-color: red;
+}
 
 form input, textarea {
   padding: 5px;
   border-radius; 5px;
-  width: 240px;
+  width: 320px;
 }
 
 form {
