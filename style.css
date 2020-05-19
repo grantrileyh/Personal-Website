@@ -133,6 +133,16 @@ a:hover{
 
 /* HEADSHOT */
 
+.index-intro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.index-blurb {
+  margin-top: 100px;
+  flex: 0 1 45%;
+}
+
 .headshot-and-quote {
   margin-top: 100px;
   text-align: center
@@ -164,24 +174,6 @@ a:hover{
 }
 
 
-
-
-/* ABOUT STUFF */
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
-.i-am, .i-like {
-  text-align: center;
-  text-decoration: none;
-}
-
-.about-list {
-  list-style: none;
-  padding: 0;
-}
 
 
 
