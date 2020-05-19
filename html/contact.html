@@ -7,6 +7,9 @@
   <link  href="../style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Merriweather&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="../script.js"></script>
+
 </head>
 
 <body>
@@ -56,37 +59,57 @@
       <div class="links-and-contact-grid">
         <! Links >
         <div class="links">
-          <h3> Links </h3>
-          <ul class="links-list">
+          <h3> Connect with me on other platforms </h3>
 
-            <li>
-              <a href="https://github.com/grantrileyh/"> Github </a>
-            </li>
+          <p> You can follow me or check out my repositories directly on
+            <a href="https://github.com/grantrileyh/"> GitHub</a>.
+          </p>
 
-            <li>
-              <a href="https://linkedin.com/in/rileyhgrant/"> LinkedIn </a>
-            </li>
-        </div>
+          <p> Or you can connect with me on
+            <a href="https://linkedin.com/in/rileyhgrant/"> LinkedIn</a>.
+          </p>
+
+          <p> Or you could shoot me an email at
+            <b><em>grantrileyh@gmail.com</em></b>,
+            or by using the form below!
+
+      </div>
 
     <! Contact Me >
       <div class="contacts">
-  	     <form action="#">
-  	        <label for="email">
-                   <h4> Email </h4>
-                   <input type="email" id="email" placeholder="Enter your email" />
+        <br>
+        <hr/>
+        <br>
+  	     <form class="contact-form" action="https://formspree.io/grantrileyh@gmail.com" method="POST">
+  	        <label>
+              <h4>Email</h4>
+              <input type="email" name="email" class="contact-email" placeholder="Enter your email" />
   		      </label>
-  				  <label for="message">
-                    <h4> Message </h4>
-                    <textarea id="message"></textarea>
-  				  </label>
-            <div class="submit-button-wrapper">
-              <input type="submit" valid="Send Message" id="submit-button"/>
+            <div class="contact-email-msg">
             </div>
+            <label>
+              <h4>Subject</h4>
+              <input type="subject" name="subject" class="contact-subject" placeholder="Enter your subject" />
+  		      </label>
+            <div class="contact-subject-msg">
+            </div>
+  				  <label>
+              <h4> Your Message </h4>
+              <textarea type="message" name="message" class="contact-message" placeholder="Enter your message"></textarea>
+  				  </label>
+            <div class="contact-message-msg">
+            </div>
+            <br>
+            <button type="submit" class="contact-submit">
+              Submit
+            </button>
   			</form>
+        <br>
   		</div>
     </div>
-
   </div>
+
+
 
 
   <! Footer Div >
@@ -102,7 +125,6 @@
   </div>
 
 </div>
-<script src="../script.js"></script>
 </body>
 
 </html>

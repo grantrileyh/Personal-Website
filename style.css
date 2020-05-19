@@ -74,6 +74,15 @@ a:hover{
   min-height: 100%;
 }
 
+.inner-container a{
+  border-bottom: 1px solid;
+}
+
+.inner-container a:hover{
+  transition: all ease-in-out 0.1s;
+  border-bottom: 0px solid;
+}
+
 /* MASTHEAD */
 
 #masthead {
@@ -269,40 +278,44 @@ a:hover{
 
 
 .links-and-contact-grid {
-  background-color: white;
   display: flex;
   flex-direction: column;
 }
 
 .links {
+  max-width: 840px;
   margin: 0 auto;
-  background-color: pink;
 }
 
 .links-list {
   margin: 0 auto;
 }
 
+
 .contacts {
-  background-color: red;
+  margin: 0 auto;
 }
 
 form input, textarea {
   padding: 5px;
   border-radius; 5px;
-  width: 320px;
+  width: 500px;
 }
 
-form {
-  width: 320px;
+.contact-message {
+  height: 130px;
+}
+
+.contact-email-msg, .contact-subject-msg, .contact-message-msg {
+  color: var(--med-dark-color);
+}
+
+.contact-form {
+  width: 500px;
   margin: 0 auto;
 }
 
-form input[type="submit"] {
-  width: 250px;
-}
-
-.submit-button-wrapper {
+.contact-button {
   background-color: var(--light-color);
   margin: 20px 0;
 }

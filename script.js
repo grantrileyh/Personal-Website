@@ -1,28 +1,42 @@
-let submitButton = document.querySelector('#submit-button');
+console.log("it works!")
 
-function clickListener(event) {
-  event.preventDefault();
-  let emailInput = document.querySelector('#email');
-  let messageInput = document.querySelector('#message');
+$(document).ready(function () {
+  $('.contact-submit').click(function (event) {
+    console.log("clicked button!")
 
-  let emailText = emailInput.value;
-  let messageText = messageInput.value;
+    var email = $('.contact-email').val()
+    var subject = $('.contact-subject').val()
+    var message = $('.contact-message').val()
+    // hold status element to give info to user
+    $( ".contact-email-msg" ).empty()
+    $( ".contact-subject-msg" ).empty()
+    $( ".contact-message-msg" ).empty()
 
-  if(emailValidate(emailText) !== true) {
-    console.log('The email address must contain @');
-    return false
-  }
-  console.log("Thanks for your message!");
-}
 
-submitButton.addEventListener('click', clickListener);
+    //validate data
+    if(email.length > 5 && email.includes('@') && email.includes('.') ) {
+      console.log('email is valid')
+    } else {
+      $( ".contact-email-msg" ).append('<div> * Please enter a valid email.</div>')
+      event.preventDefault()
+      console.log('email is NOT valid')
+    }
 
-// test comment
-function emailValidate(email) {
-  if(email.includes('@')) {
-    return true;
-  }
-  else {
-    return false;
-  }
-}
+    if(subject.length > 2) {
+      console.log('subject is valid')
+    } else {
+      $( ".contact-subject-msg" ).append("<div>* Please enter a longer subject.</div>")
+      event.preventDefault()
+      console.log('subject is NOT valid')
+    }
+
+    if(message.length > 10) {
+      console.log('message is valid')
+    } else {
+      $( ".contact-message-msg" ).append('<div>* Please enter a longer message.</div>')
+      event.preventDefault()
+      console.log('message is NOT valid')
+    }
+
+  })
+})
