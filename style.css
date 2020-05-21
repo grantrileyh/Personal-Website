@@ -234,6 +234,17 @@ a:hover{
   flex: 0 1 10%;
 }
 
+.project-links a{
+  border-bottom: 0px solid;
+}
+
+.project-links a:hover{
+  color: var(--dark-color);
+  border-bottom: 1px solid;
+
+}
+
+
 .project-skills-text {
   list-style: none;
   text-align: left;
