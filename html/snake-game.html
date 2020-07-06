@@ -2,11 +2,12 @@
 <html>
 
 <head>
-  <title>RG About Me</title>
+  <title>Snake!</title>
   <link rel="icon" href="../images/menu_logo.png">
   <link  href="../style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Raleway|Merriweather&display=swap" rel="stylesheet">
+  <script src="../javascript/snake-script.js"></script>
 </head>
 
 <body>
@@ -41,7 +42,12 @@
 
   <div class="inner-container" >
 
+    <hr/>
 
+    <body onload="init();">
+      <canvas id="snake-canvas" width="750" height="450">
+      </canvas>
+    </body>
 
   </div>
 

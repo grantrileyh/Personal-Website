@@ -114,7 +114,6 @@ a:hover{
 }
 
 
-
 .header-links-grid {
   list-style: none;
   display: flex;
@@ -241,7 +240,6 @@ a:hover{
 .project-links a:hover{
   color: var(--dark-color);
   border-bottom: 1px solid;
-
 }
 
 
@@ -257,8 +255,6 @@ a:hover{
   flex: 0 1 35%;
   margin-right: 50px;
 }
-
-
 
 .about-me-text {
   max-width: 840px;
@@ -321,6 +317,12 @@ form input, textarea {
 .contact-button {
   background-color: var(--light-color);
   margin: 20px 0;
+}
+
+#snake-canvas {
+  display: flex;
+  margin: 75px auto;
+  background-color: grey;
 }
 
 
