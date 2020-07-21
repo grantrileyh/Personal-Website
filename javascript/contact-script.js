@@ -14,6 +14,7 @@ $(document).ready(function () {
 
 
     //validate data
+    //
     if(email.length > 5 && email.includes('@') && email.includes('.') ) {
       console.log('email is valid')
     } else {
